@@ -276,6 +276,32 @@ body {
   margin-right: 0;
 }
 
+.advantage-list .item::before {
+  content: "";
+  margin-bottom: 30px;
+  display: block;
+  height: 120px;
+  background-color: var(--employees-bcg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-list .icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.advantage-list .icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.advantage-list .icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.advantage-list .icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 /* Заголовок */
 .advantage-title {
   color: var(--title-text-color);
@@ -378,6 +404,40 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+/* Секция наши постоянные клиенты */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+}
+
+.customers-list .item-icon {
+  flex-basis: calc(100% / 6);
+  margin-right: var(--primery-gap);
+  width: 170px;
+  height: 97px;
+  outline: 1px solid skyblue;
+  text-align: center;
+}
+.customers-list .item-icon:last-child {
+  margin-right: 0px;
+}
+
+.item-icon .link {
+  display: block;
+  text-decoration: none;
 }
 
 /* Футер */
