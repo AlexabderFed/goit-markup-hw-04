@@ -188,12 +188,12 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.link-item > .contact-icon-mail:hover,
-.link-item > .contact-icon-mail:focus {
+.link-item .contact-icon-mail:hover,
+.link-item .contact-icon-mail:focus {
   fill: var(--accent-color);
 }
-.link-item > .contact-icon-tel:hover,
-.link-item > .contact-icon-tel:focus {
+.link-item .contact-icon-tel:hover,
+.link-item .contact-icon-tel:focus {
   fill: var(--accent-color);
 }
 
