@@ -183,7 +183,7 @@ body {
 .contact .link-item {
   color: var(--primery-text-color);
   text-decoration: none;
-
+  align-items: center;
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -200,8 +200,6 @@ body {
 .contact-item .link-item:hover,
 .contact-item .link-item:focus {
   color: var(--accent-color);
-  outline: 1px solid darkblue;
-  fill: var(--accent-color);
 }
 
 .contact-icon-mail {
@@ -211,7 +209,12 @@ body {
   margin-right: 10px;
   display: inline-flex;
 }
-
+.contact .link-item:hover .contact-icon-mail {
+  fill: var(--accent-color);
+}
+.contact .link-item:hover .contact-icon-tel {
+  fill: var(--accent-color);
+}
 .contact-icon-tel {
   width: 10px;
   height: 16px;
