@@ -209,10 +209,12 @@ body {
   margin-right: 10px;
   display: inline-flex;
 }
-.contact .link-item:hover .contact-icon-mail {
+.contact .link-item:hover .contact-icon-mail,
+.contact .link-item:focus .contact-icon-mail {
   fill: var(--accent-color);
 }
-.contact .link-item:hover .contact-icon-tel {
+.contact .link-item:hover .contact-icon-tel,
+.contact .link-item:focus .contact-icon-tel {
   fill: var(--accent-color);
 }
 .contact-icon-tel {
