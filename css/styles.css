@@ -79,6 +79,8 @@ button:hover,
 button:focus {
   color: var(--primery-bcg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Контейнер Центровочный */
@@ -283,6 +285,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hero-button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Секция наши преимущества  */
@@ -451,7 +454,6 @@ body {
 }
 
 .social-link .link-icon {
-  border-radius: 50%;
   list-style: none;
   width: 44px;
   height: 44px;
@@ -462,18 +464,26 @@ body {
   margin-right: 0px;
 }
 
-.social-link .link-icon:hover {
+/* .social-link .link-icon:hover,
+.social-link .link-icon:focus {
   background-color: var(--accent-color);
-}
+} */
 
 .item-link {
-  padding: 12px;
-  display: block;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  /* padding: 12px; */
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
   fill: var(--primery-icon-color);
 }
 
-.item-link:hover {
+.item-link:hover,
+.item-link:focus {
   fill: var(--primery-bcg-color);
+  background-color: var(--accent-color);
 }
 .item-link .item-icon {
   height: 20px;
@@ -504,8 +514,8 @@ body {
   margin-right: var(--primery-gap);
   width: 170px;
   height: 92px;
-  border: 1px solid var(--primery-icon-color);
-  border-radius: 4px;
+  /* border: 1px solid var(--primery-icon-color);
+  border-radius: 4px; */
   /* padding: 16px 32px; */
 }
 
@@ -514,26 +524,33 @@ body {
 }
 
 .customers-item .customers-link {
-  display: block;
+  display: inline-flex;
   text-decoration: none;
+  border: 1px solid var(--primery-icon-color);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .customers-link .customers-icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
+  /* justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat; */
+  width: 106px;
+  height: 60px;
+  /* padding: 16px 32px; */
   fill: var(--primery-icon-color);
 }
-.customers-list .customers-item:hover,
-.customers-list .customers-item:focus {
-  border: 1px solid var(--accent-color);
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--accent-color);
 }
 
-.customers-link .customers-icon:hover,
-.customers-link .customers-icon:focus {
-  fill: var(--accent-color);
+.customers-item .customers-link:hover,
+.customers-item .customers-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* Футер */
@@ -627,15 +644,27 @@ body {
   width: 20px;
 }
 .footer-item-link {
-  padding: 12px;
-  display: block;
+  display: inline-flex;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.footer-social-link .footer-link-icon:hover {
+
+.footer-item-link:hover,
+.footer-item-link:focus {
   background-color: var(--accent-color);
 }
+
+/* .footer-social-link .footer-link-icon:hover,
+.footer-social-link .footer-link-icon:focus {
+  background-color: var(--accent-color);
+} */
 .footer-icon {
   fill: var(--primery-bcg-color);
 }
+
 /* Portfolio */
 
 /* Секция фильтр-кнопки */
@@ -653,11 +682,7 @@ body {
 .filter-button > .item:not(:last-child) {
   margin-right: 8px;
 }
-.filter-button .item:hover,
-.filter-button .item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 /* Карточки проектов */
 .project-cards {
   display: flex;
@@ -671,11 +696,20 @@ body {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
 }
-.project-cards > .item:hover,
-.project-cards > .item:focus {
+.project-card-link {
+  display: block;
+}
+
+.item .project-card-link:hover,
+.item .project-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+/* .project-cards > .item:hover,
+.project-cards > .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 /* .card-thumb {
   outline: 1 px sold salmon;
 } */
